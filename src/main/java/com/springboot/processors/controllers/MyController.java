@@ -17,7 +17,7 @@ import com.springboot.processors.services.PdfService;
 import com.springboot.processors.services.XLSXService;
 
 @Controller
-@RequestMapping("/pdf")
+@RequestMapping("/nikhil")
 public class MyController {
 	
 	@Autowired
@@ -56,7 +56,7 @@ public class MyController {
 	public ResponseEntity<JsonResponse> writeToXlsx() {
 		try {
             xlsxService.writeToXlsx();
-            // If the file is read successfully
+            // If the file is written successfully
             JsonResponse response = new JsonResponse(HttpStatus.OK, 200, "File read successfully");
             return ResponseEntity.status(HttpStatus.OK).body(response);
         } catch (Exception e) {
