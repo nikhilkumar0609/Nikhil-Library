@@ -23,7 +23,7 @@ import com.springboot.processors.services.XLSXService;
 
 public class XLSXUtil {
 
-	private static final Logger LOG = LoggerFactory.getLogger(XLSXService.class);
+	private static final Logger LOG = LoggerFactory.getLogger(XLSXUtil.class);
 	
 	public static ArrayList<HashMap<String, String>> readXLSXFile(File fileName, String headerTokens[], int headerRows){
 		
@@ -102,7 +102,7 @@ public class XLSXUtil {
 			FileOutputStream out = new FileOutputStream(new File(filePath));
 			workbook.write(out);
 			out.close();
-			LOG.info(fileName + " written successfully..");
+			LOG.info("{} written successfully..", fileName);
 		}
 	}
 	
