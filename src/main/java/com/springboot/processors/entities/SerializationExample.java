@@ -5,6 +5,9 @@ public class SerializationExample {
 	private String name;
     private int value;
 
+    // Default constructor
+    public SerializationExample() {}
+    
     public SerializationExample(String name, int value) {
         this.name = name;
         this.value = value;
