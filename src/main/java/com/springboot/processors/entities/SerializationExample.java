@@ -1,5 +1,8 @@
 package com.springboot.processors.entities;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class SerializationExample {
 	
 	private String name;
